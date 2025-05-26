@@ -2,19 +2,18 @@
   <!-- Header com seletor de idioma -->
   <header class="header">
     <div class="logo-container">
-      <img src="assets/bradesco-logo.png" alt="Bradesco" class="logo" onerror="this.src='https://www.bradesco.com.br/content/dam/bradesco/pt-br/imagens/logo/bradesco-logo.png'; this.onerror='';">
       <h1>Bradesco Empresas</h1>
     </div>
     <div class="language-selector">
-      <button mat-button [matMenuTriggerFor]="languageMenu" class="language-button">
+      <button mat-button type="button" [matMenuTriggerFor]="languagemenu" class="language-button">
         <mat-icon>language</mat-icon>
-        {{ 'CADASTRO.IDIOMA' | translate }}
+        {{ 'Translate' | translate }}
       </button>
-      <mat-menu #languageMenu="matMenu">
-        <button mat-menu-item (click)="changeLanguage('pt-BR')">
+      <mat-menu #languagemenu="matMenu">
+        <button mat-menu-item type="button" (click)="changeLanguage('pt-BR')">
           🇧🇷 Português
         </button>
-        <button mat-menu-item (click)="changeLanguage('en')">
+        <button mat-menu-item type="button" (click)="changeLanguage('en')">
           🇺🇸 English
         </button>
       </mat-menu>
@@ -23,25 +22,25 @@
 
   <!-- Conteúdo principal com etapas -->
   <main class="main-content">
-    <!-- Etapa 1: Introdução e pergunta inicial -->
     <div *ngIf="currentStep === 0" class="step intro-step">
       <mat-card class="intro-card">
         <mat-card-header>
-          <mat-card-title>{{ 'CADASTRO.INTRO.TITULO' | translate }}</mat-card-title>
+          <mat-card-title>Abra sua conta PJ no Bradesco</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p class="intro-text">{{ 'CADASTRO.INTRO.DESCRICAO' | translate }}</p>
-          <div class="intro-image">
-            <img src="assets/business-account.jpg" alt="Conta Empresarial" onerror="this.src='https://via.placeholder.com/600x300?text=Conta+Empresarial'; this.onerror='';">
-          </div>
-          <p class="intro-question">{{ 'CADASTRO.INTRO.PERGUNTA' | translate }}</p>
+          <p class="intro-text">
+            Comece agora mesmo a aproveitar as vantagens da conta jurídica completa, com soluções de pagamento, crédito e gestão financeira pensadas para sua empresa.
+          </p>
+          <p class="intro-question">
+            Deseja iniciar seu cadastro agora?
+          </p>
         </mat-card-content>
         <mat-card-actions align="end">
           <button mat-button (click)="nextStep()" class="primary-button">
-            {{ 'CADASTRO.INTRO.BOTAO_SIM' | translate }}
+            Sim, quero abrir minha conta
           </button>
           <a mat-button href="https://www.bradesco.com.br" target="_blank" class="secondary-button">
-            {{ 'CADASTRO.INTRO.BOTAO_NAO' | translate }}
+            Não, obrigado
           </a>
         </mat-card-actions>
       </mat-card>
