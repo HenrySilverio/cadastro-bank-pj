@@ -1,0 +1,136 @@
+<div class="cadastro-page">
+  <!-- Header com seletor de idioma -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/bradesco-logo.png" alt="Bradesco" class="logo" onerror="this.src='https://www.bradesco.com.br/content/dam/bradesco/pt-br/imagens/logo/bradesco-logo.png'; this.onerror='';">
+      <h1>Bradesco Empresas</h1>
+    </div>
+    <div class="language-selector">
+      <button mat-button [matMenuTriggerFor]="languageMenu" class="language-button">
+        <mat-icon>language</mat-icon>
+        {{ 'CADASTRO.IDIOMA' | translate }}
+      </button>
+      <mat-menu #languageMenu="matMenu">
+        <button mat-menu-item (click)="changeLanguage('pt-BR')">
+          🇧🇷 Português
+        </button>
+        <button mat-menu-item (click)="changeLanguage('en')">
+          🇺🇸 English
+        </button>
+      </mat-menu>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal com etapas -->
+  <main class="main-content">
+    <!-- Etapa 1: Introdução e pergunta inicial -->
+    <div *ngIf="currentStep === 0" class="step intro-step">
+      <mat-card class="intro-card">
+        <mat-card-header>
+          <mat-card-title>{{ 'CADASTRO.INTRO.TITULO' | translate }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="intro-text">{{ 'CADASTRO.INTRO.DESCRICAO' | translate }}</p>
+          <div class="intro-image">
+            <img src="assets/business-account.jpg" alt="Conta Empresarial" onerror="this.src='https://via.placeholder.com/600x300?text=Conta+Empresarial'; this.onerror='';">
+          </div>
+          <p class="intro-question">{{ 'CADASTRO.INTRO.PERGUNTA' | translate }}</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button (click)="nextStep()" class="primary-button">
+            {{ 'CADASTRO.INTRO.BOTAO_SIM' | translate }}
+          </button>
+          <a mat-button href="https://www.bradesco.com.br" target="_blank" class="secondary-button">
+            {{ 'CADASTRO.INTRO.BOTAO_NAO' | translate }}
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Etapa 2: Benefícios da conta PJ -->
+    <div *ngIf="currentStep === 1" class="step benefits-step">
+      <mat-card class="benefits-card">
+        <mat-card-header>
+          <mat-card-title>{{ 'CADASTRO.BENEFICIOS.TITULO' | translate }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="benefits-container">
+            <!-- Cartões -->
+            <div class="benefit-item">
+              <mat-icon class="benefit-icon">credit_card</mat-icon>
+              <h3>{{ 'CADASTRO.BENEFICIOS.CARTAO.TITULO' | translate }}</h3>
+              <p>{{ 'CADASTRO.BENEFICIOS.CARTAO.DESCRICAO' | translate }}</p>
+              <ul class="benefit-list">
+                <li>{{ 'CADASTRO.BENEFICIOS.CARTAO.ITEM1' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.CARTAO.ITEM2' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.CARTAO.ITEM3' | translate }}</li>
+              </ul>
+            </div>
+
+            <!-- Tarifas -->
+            <div class="benefit-item">
+              <mat-icon class="benefit-icon">savings</mat-icon>
+              <h3>{{ 'CADASTRO.BENEFICIOS.TARIFAS.TITULO' | translate }}</h3>
+              <p>{{ 'CADASTRO.BENEFICIOS.TARIFAS.DESCRICAO' | translate }}</p>
+              <ul class="benefit-list">
+                <li>{{ 'CADASTRO.BENEFICIOS.TARIFAS.ITEM1' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.TARIFAS.ITEM2' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.TARIFAS.ITEM3' | translate }}</li>
+              </ul>
+            </div>
+
+            <!-- Serviços -->
+            <div class="benefit-item">
+              <mat-icon class="benefit-icon">business_center</mat-icon>
+              <h3>{{ 'CADASTRO.BENEFICIOS.SERVICOS.TITULO' | translate }}</h3>
+              <p>{{ 'CADASTRO.BENEFICIOS.SERVICOS.DESCRICAO' | translate }}</p>
+              <ul class="benefit-list">
+                <li>{{ 'CADASTRO.BENEFICIOS.SERVICOS.ITEM1' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.SERVICOS.ITEM2' | translate }}</li>
+                <li>{{ 'CADASTRO.BENEFICIOS.SERVICOS.ITEM3' | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button (click)="previousStep()" class="secondary-button">
+            {{ 'CADASTRO.BOTAO_VOLTAR' | translate }}
+          </button>
+          <button mat-button (click)="nextStep()" class="primary-button">
+            {{ 'CADASTRO.BOTAO_CONTINUAR' | translate }}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Etapa 3: Formulário de cadastro -->
+    <div *ngIf="currentStep === 2" class="step form-step">
+      <mat-card class="form-card">
+        <mat-card-header>
+          <mat-card-title>{{ 'CADASTRO.FORMULARIO.TITULO' | translate }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="form-intro">{{ 'CADASTRO.FORMULARIO.DESCRICAO' | translate }}</p>
+          <app-cadastro-form></app-cadastro-form>
+        </mat-card-content>
+        <mat-card-actions align="start">
+          <button mat-button (click)="previousStep()" class="secondary-button">
+            {{ 'CADASTRO.BOTAO_VOLTAR' | translate }}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; {{ 'CADASTRO.FOOTER.COPYRIGHT' | translate }}</p>
+      <div class="footer-links">
+        <a href="https://www.bradesco.com.br/termos-de-uso" target="_blank">{{ 'CADASTRO.FOOTER.TERMOS' | translate }}</a>
+        <a href="https://www.bradesco.com.br/politica-de-privacidade" target="_blank">{{ 'CADASTRO.FOOTER.PRIVACIDADE' | translate }}</a>
+        <a href="https://www.bradesco.com.br/contato" target="_blank">{{ 'CADASTRO.FOOTER.CONTATO' | translate }}</a>
+      </div>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,62 @@
+{
+  "pt-BR": {
+    "CADASTRO": {
+      "TITULO": "Cadastro de Pessoa Jurídica",
+      "RAZAO_SOCIAL": "Razão Social",
+      "RAZAO_SOCIAL_PLACEHOLDER": "Informe a razão social",
+      "CNPJ": "CNPJ",
+      "CNPJ_PLACEHOLDER": "00.000.000/0000-00",
+      "NOME_RESPONSAVEL": "Nome do Responsável",
+      "NOME_RESPONSAVEL_PLACEHOLDER": "Informe o nome do responsável",
+      "EMAIL": "E-mail Corporativo",
+      "EMAIL_PLACEHOLDER": "email@empresa.com.br",
+      "TELEFONE": "Telefone",
+      "TELEFONE_PLACEHOLDER": "(00) 00000-0000",
+      "AREA_ATUACAO": "Área de Atuação",
+      "BOTAO_CADASTRAR": "Cadastrar",
+      "SUCESSO": "Cadastro realizado com sucesso!",
+      "ERRO_GENERICO": "Ocorreu um erro ao processar sua solicitação. Tente novamente mais tarde."
+    },
+    "VALIDACAO": {
+      "CAMPO_OBRIGATORIO": "Campo obrigatório",
+      "RAZAO_SOCIAL_MIN": "Razão Social deve ter no mínimo 3 caracteres",
+      "CNPJ_INVALIDO": "CNPJ inválido",
+      "NOME_MIN": "Nome deve ter no mínimo 3 caracteres",
+      "EMAIL_INVALIDO": "E-mail inválido",
+      "TELEFONE_INVALIDO": "Telefone inválido"
+    },
+    "IDIOMA": "Idioma",
+    "PORTUGUES": "Português",
+    "INGLES": "English"
+  },
+  "en": {
+    "CADASTRO": {
+      "TITULO": "Business Registration",
+      "RAZAO_SOCIAL": "Company Name",
+      "RAZAO_SOCIAL_PLACEHOLDER": "Enter company name",
+      "CNPJ": "Tax ID",
+      "CNPJ_PLACEHOLDER": "00.000.000/0000-00",
+      "NOME_RESPONSAVEL": "Contact Person",
+      "NOME_RESPONSAVEL_PLACEHOLDER": "Enter contact person name",
+      "EMAIL": "Corporate Email",
+      "EMAIL_PLACEHOLDER": "email@company.com",
+      "TELEFONE": "Phone",
+      "TELEFONE_PLACEHOLDER": "(00) 00000-0000",
+      "AREA_ATUACAO": "Business Sector",
+      "BOTAO_CADASTRAR": "Register",
+      "SUCESSO": "Registration completed successfully!",
+      "ERRO_GENERICO": "An error occurred while processing your request. Please try again later."
+    },
+    "VALIDACAO": {
+      "CAMPO_OBRIGATORIO": "Required field",
+      "RAZAO_SOCIAL_MIN": "Company name must have at least 3 characters",
+      "CNPJ_INVALIDO": "Invalid Tax ID",
+      "NOME_MIN": "Name must have at least 3 characters",
+      "EMAIL_INVALIDO": "Invalid email",
+      "TELEFONE_INVALIDO": "Invalid phone number"
+    },
+    "IDIOMA": "Language",
+    "PORTUGUES": "Português",
+    "INGLES": "English"
+  }
+}

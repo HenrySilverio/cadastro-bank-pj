@@ -1,0 +1,128 @@
+{
+  "pt-BR": {
+    "CADASTRO": {
+      "IDIOMA": "Idioma",
+      "BOTAO_VOLTAR": "Voltar",
+      "BOTAO_CONTINUAR": "Continuar",
+      "INTRO": {
+        "TITULO": "Bem-vindo ao Bradesco Empresas",
+        "DESCRICAO": "Oferecemos soluções financeiras completas para sua empresa crescer e prosperar no mercado. Com o Bradesco Empresas, você tem acesso a produtos e serviços exclusivos para o seu negócio.",
+        "PERGUNTA": "Deseja abrir uma conta PJ no Bradesco?",
+        "BOTAO_SIM": "Sim, quero abrir uma conta",
+        "BOTAO_NAO": "Não, apenas conhecer"
+      },
+      "BENEFICIOS": {
+        "TITULO": "Benefícios da Conta PJ Bradesco",
+        "CARTAO": {
+          "TITULO": "Cartões Empresariais",
+          "DESCRICAO": "Cartões com benefícios exclusivos para sua empresa.",
+          "ITEM1": "Controle de gastos por centro de custo",
+          "ITEM2": "Programa de pontos e recompensas",
+          "ITEM3": "Aceitação internacional"
+        },
+        "TARIFAS": {
+          "TITULO": "Tarifas Diferenciadas",
+          "DESCRICAO": "Economize com nossas tarifas especiais para empresas.",
+          "ITEM1": "Isenção de tarifas nos primeiros 6 meses",
+          "ITEM2": "Pacotes personalizados conforme seu perfil",
+          "ITEM3": "Descontos progressivos por volume de transações"
+        },
+        "SERVICOS": {
+          "TITULO": "Serviços Exclusivos",
+          "DESCRICAO": "Acesso a serviços que facilitam a gestão do seu negócio.",
+          "ITEM1": "Internet Banking Empresarial",
+          "ITEM2": "Consultoria financeira especializada",
+          "ITEM3": "Linhas de crédito com condições especiais"
+        }
+      },
+      "FORMULARIO": {
+        "TITULO": "Cadastro de Pessoa Jurídica",
+        "DESCRICAO": "Preencha os dados abaixo para iniciar seu cadastro. Nossa equipe entrará em contato para finalizar o processo de abertura da sua conta.",
+        "RAZAO_SOCIAL": "Razão Social",
+        "CNPJ": "CNPJ",
+        "NOME_RESPONSAVEL": "Nome do Responsável",
+        "EMAIL": "E-mail Corporativo",
+        "TELEFONE": "Telefone",
+        "AREA_ATUACAO": "Área de Atuação",
+        "BOTAO_CADASTRAR": "Cadastrar",
+        "SUCESSO": "Cadastro realizado com sucesso! Em breve entraremos em contato."
+      },
+      "VALIDACAO": {
+        "CAMPO_OBRIGATORIO": "Campo obrigatório",
+        "MINIMO_CARACTERES": "Mínimo de {{min}} caracteres",
+        "CNPJ_INVALIDO": "CNPJ inválido",
+        "EMAIL_INVALIDO": "E-mail inválido",
+        "TELEFONE_INVALIDO": "Telefone inválido"
+      },
+      "FOOTER": {
+        "COPYRIGHT": "2025 Banco Bradesco S.A. Todos os direitos reservados.",
+        "TERMOS": "Termos de Uso",
+        "PRIVACIDADE": "Política de Privacidade",
+        "CONTATO": "Contato"
+      }
+    }
+  },
+  "en": {
+    "CADASTRO": {
+      "IDIOMA": "Language",
+      "BOTAO_VOLTAR": "Back",
+      "BOTAO_CONTINUAR": "Continue",
+      "INTRO": {
+        "TITULO": "Welcome to Bradesco Business",
+        "DESCRICAO": "We offer complete financial solutions for your company to grow and thrive in the market. With Bradesco Business, you have access to exclusive products and services for your business.",
+        "PERGUNTA": "Would you like to open a business account at Bradesco?",
+        "BOTAO_SIM": "Yes, I want to open an account",
+        "BOTAO_NAO": "No, just browsing"
+      },
+      "BENEFICIOS": {
+        "TITULO": "Bradesco Business Account Benefits",
+        "CARTAO": {
+          "TITULO": "Business Cards",
+          "DESCRICAO": "Cards with exclusive benefits for your company.",
+          "ITEM1": "Expense control by cost center",
+          "ITEM2": "Points and rewards program",
+          "ITEM3": "International acceptance"
+        },
+        "TARIFAS": {
+          "TITULO": "Special Fees",
+          "DESCRICAO": "Save with our special fees for businesses.",
+          "ITEM1": "Fee exemption for the first 6 months",
+          "ITEM2": "Customized packages according to your profile",
+          "ITEM3": "Progressive discounts by transaction volume"
+        },
+        "SERVICOS": {
+          "TITULO": "Exclusive Services",
+          "DESCRICAO": "Access to services that facilitate your business management.",
+          "ITEM1": "Business Internet Banking",
+          "ITEM2": "Specialized financial consulting",
+          "ITEM3": "Credit lines with special conditions"
+        }
+      },
+      "FORMULARIO": {
+        "TITULO": "Business Registration",
+        "DESCRICAO": "Fill in the information below to start your registration. Our team will contact you to complete the account opening process.",
+        "RAZAO_SOCIAL": "Company Name",
+        "CNPJ": "Business ID",
+        "NOME_RESPONSAVEL": "Responsible Person",
+        "EMAIL": "Corporate Email",
+        "TELEFONE": "Phone",
+        "AREA_ATUACAO": "Business Area",
+        "BOTAO_CADASTRAR": "Register",
+        "SUCESSO": "Registration completed successfully! We will contact you soon."
+      },
+      "VALIDACAO": {
+        "CAMPO_OBRIGATORIO": "Required field",
+        "MINIMO_CARACTERES": "Minimum of {{min}} characters",
+        "CNPJ_INVALIDO": "Invalid Business ID",
+        "EMAIL_INVALIDO": "Invalid email",
+        "TELEFONE_INVALIDO": "Invalid phone"
+      },
+      "FOOTER": {
+        "COPYRIGHT": "2025 Banco Bradesco S.A. All rights reserved.",
+        "TERMOS": "Terms of Use",
+        "PRIVACIDADE": "Privacy Policy",
+        "CONTATO": "Contact"
+      }
+    }
+  }
+}

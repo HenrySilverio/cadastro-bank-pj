@@ -1,0 +1,65 @@
+{
+  "en": {
+    "CADASTRO": {
+      "IDIOMA": "Language",
+      "BOTAO_VOLTAR": "Back",
+      "BOTAO_CONTINUAR": "Continue",
+      "INTRO": {
+        "TITULO": "Welcome to Bradesco Business",
+        "DESCRICAO": "We offer complete financial solutions for your company to grow and thrive in the market. With Bradesco Business, you have access to exclusive products and services for your business.",
+        "PERGUNTA": "Would you like to open a business account at Bradesco?",
+        "BOTAO_SIM": "Yes, I want to open an account",
+        "BOTAO_NAO": "No, just browsing"
+      },
+      "BENEFICIOS": {
+        "TITULO": "Bradesco Business Account Benefits",
+        "CARTAO": {
+          "TITULO": "Business Cards",
+          "DESCRICAO": "Cards with exclusive benefits for your company.",
+          "ITEM1": "Expense control by cost center",
+          "ITEM2": "Points and rewards program",
+          "ITEM3": "International acceptance"
+        },
+        "TARIFAS": {
+          "TITULO": "Special Fees",
+          "DESCRICAO": "Save with our special fees for businesses.",
+          "ITEM1": "Fee exemption for the first 6 months",
+          "ITEM2": "Customized packages according to your profile",
+          "ITEM3": "Progressive discounts by transaction volume"
+        },
+        "SERVICOS": {
+          "TITULO": "Exclusive Services",
+          "DESCRICAO": "Access to services that facilitate your business management.",
+          "ITEM1": "Business Internet Banking",
+          "ITEM2": "Specialized financial consulting",
+          "ITEM3": "Credit lines with special conditions"
+        }
+      },
+      "FORMULARIO": {
+        "TITULO": "Business Registration",
+        "DESCRICAO": "Fill in the information below to start your registration. Our team will contact you to complete the account opening process.",
+        "RAZAO_SOCIAL": "Company Name",
+        "CNPJ": "Business ID",
+        "NOME_RESPONSAVEL": "Responsible Person",
+        "EMAIL": "Corporate Email",
+        "TELEFONE": "Phone",
+        "AREA_ATUACAO": "Business Area",
+        "BOTAO_CADASTRAR": "Register",
+        "SUCESSO": "Registration completed successfully! We will contact you soon."
+      },
+      "VALIDACAO": {
+        "CAMPO_OBRIGATORIO": "Required field",
+        "MINIMO_CARACTERES": "Minimum of {{min}} characters",
+        "CNPJ_INVALIDO": "Invalid Business ID",
+        "EMAIL_INVALIDO": "Invalid email",
+        "TELEFONE_INVALIDO": "Invalid phone"
+      },
+      "FOOTER": {
+        "COPYRIGHT": "2025 Banco Bradesco S.A. All rights reserved.",
+        "TERMOS": "Terms of Use",
+        "PRIVACIDADE": "Privacy Policy",
+        "CONTATO": "Contact"
+      }
+    }
+  }
+}

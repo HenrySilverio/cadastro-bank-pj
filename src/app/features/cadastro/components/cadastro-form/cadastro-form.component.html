@@ -1,0 +1,96 @@
+<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()" class="cadastro-form">
+  <div class="form-fields">
+    <!-- Razão Social -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.RAZAO_SOCIAL' | translate }}</mat-label>
+      <input matInput formControlName="razaoSocial" type="text">
+      <mat-error *ngIf="f['razaoSocial'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+      <mat-error *ngIf="f['razaoSocial'].errors?.['minlength']">
+        {{ 'CADASTRO.VALIDACAO.MINIMO_CARACTERES' | translate: {min: 3} }}
+      </mat-error>
+    </mat-form-field>
+
+    <!-- CNPJ -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.CNPJ' | translate }}</mat-label>
+      <input matInput formControlName="cnpj" type="text" mask="00.000.000/0000-00" placeholder="00.000.000/0000-00">
+      <mat-error *ngIf="f['cnpj'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+      <mat-error *ngIf="f['cnpj'].errors?.['pattern']">
+        {{ 'CADASTRO.VALIDACAO.CNPJ_INVALIDO' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Nome do Responsável -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.NOME_RESPONSAVEL' | translate }}</mat-label>
+      <input matInput formControlName="nomeResponsavel" type="text">
+      <mat-error *ngIf="f['nomeResponsavel'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+      <mat-error *ngIf="f['nomeResponsavel'].errors?.['minlength']">
+        {{ 'CADASTRO.VALIDACAO.MINIMO_CARACTERES' | translate: {min: 3} }}
+      </mat-error>
+    </mat-form-field>
+
+    <!-- E-mail Corporativo -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.EMAIL' | translate }}</mat-label>
+      <input matInput formControlName="emailCorporativo" type="email">
+      <mat-error *ngIf="f['emailCorporativo'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+      <mat-error *ngIf="f['emailCorporativo'].errors?.['email']">
+        {{ 'CADASTRO.VALIDACAO.EMAIL_INVALIDO' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Telefone -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.TELEFONE' | translate }}</mat-label>
+      <input matInput formControlName="telefone" type="text" mask="(00) 00000-0000" placeholder="(00) 00000-0000">
+      <mat-error *ngIf="f['telefone'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+      <mat-error *ngIf="f['telefone'].errors?.['pattern']">
+        {{ 'CADASTRO.VALIDACAO.TELEFONE_INVALIDO' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Área de Atuação -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>{{ 'CADASTRO.FORMULARIO.AREA_ATUACAO' | translate }}</mat-label>
+      <mat-select formControlName="areaAtuacao">
+        <mat-option *ngFor="let area of areasAtuacao" [value]="area">
+          {{ area }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="f['areaAtuacao'].errors?.['required']">
+        {{ 'CADASTRO.VALIDACAO.CAMPO_OBRIGATORIO' | translate }}
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <!-- Mensagens de feedback -->
+  <div class="feedback-container">
+    <div *ngIf="success" class="success-message">
+      <mat-icon>check_circle</mat-icon>
+      {{ 'CADASTRO.FORMULARIO.SUCESSO' | translate }}
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      <mat-icon>error</mat-icon>
+      {{ errorMessage }}
+    </div>
+  </div>
+
+  <!-- Botão de cadastro -->
+  <div class="form-actions">
+    <button mat-raised-button color="primary" type="submit" [disabled]="loading" class="submit-button">
+      <span *ngIf="!loading">{{ 'CADASTRO.FORMULARIO.BOTAO_CADASTRAR' | translate }}</span>
+      <mat-spinner *ngIf="loading" diameter="24"></mat-spinner>
+    </button>
+  </div>
+</form>
